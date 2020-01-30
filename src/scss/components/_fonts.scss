@@ -1,0 +1,40 @@
+.font {
+  &--small { font-size: 0.7em; }
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 3rem;
+
+  &--styled {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-family: 'Pacifico', cursive;
+      color: #FFB606;
+      font-size: .7em;
+      font-weight: 400;
+    }
+
+    &.black {
+      color: #ffffff;
+    }
+  }
+}
+
+p {
+  margin: 1.5em 0;
+
+  &:first-child { margin-top: 0; }
+  &:last-child { margin-bottom: 0; }
+}
+
+html {
+  @media (min-width: 1400px) {
+    font-size: 1.3em;
+  }
+}
+

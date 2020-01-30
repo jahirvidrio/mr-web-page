@@ -1,0 +1,74 @@
+.info-card {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  color: #ffffff;
+  padding-bottom: 5em;
+
+  &__brand {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &--name {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 4em;
+      font-weight: 700;
+
+      .before, .after { font-weight: 400; }
+
+      .before {
+        font-family: 'Pacifico', cursive;
+        font-size: 0.4em;
+        color: #FFB606;
+      }
+
+      .after { font-size: 1rem; }
+    }
+
+    .button { margin-top: 2em; }
+  }
+
+  &__contact, &__social-network {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+
+
+    svg {
+      fill: #ffffff;
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+
+  &__contact {
+    > div {
+      display: flex;
+      align-items: center;
+
+      &:last-child { margin-left: 2em; }
+
+      span {
+        line-height: 1em;
+        padding-left: 0.5em;
+      }
+    }
+  }
+
+  &__social-network {
+    margin: 1em 0 2em 0;
+    svg { margin: 0 .5em; }
+  }
+}
